@@ -1,0 +1,10 @@
+# train and val datasets (image directory or *.txt file with image paths)
+train: data/voc/VOCdevkit/VOC2012/yolo_annotations/train_filtered.txt  # 118k images
+val: data/voc/VOCdevkit/VOC2012/yolo_annotations/val_filtered.txt  # 5k images
+test: data/voc/VOCdevkit/VOC2012/yolo_annotations/val_filtered.txt  # 20k images for submission to https://competitions.codalab.org/competitions/20794
+
+# number of classes
+nc: 3
+
+# class names
+names: ['bicycle', 'dog', 'person']
